@@ -85,7 +85,7 @@ int main(void){
     }
     BytebeatStop();
     Bytebeat(sound2);
-    for(int j=0; j<400; j++){
+    for(int j=0; j<500; j++){
         for (int i=0; i<count; i++){
             pixels[i]=(pixels[i] << 8)|(pixels[i]>> 16);
         }
@@ -94,7 +94,7 @@ int main(void){
     }
     BytebeatStop();
     Bytebeat(sound3);
-    for(int j=0; j<380; j++){
+    for(int j=0; j<420; j++){
         for (int i=0; i<count; i++){
             pixels[i] ^= (pixels[i] << 13) | 0x00FF00FF | (rand() % 0xFFFFFF);
         }
@@ -103,7 +103,7 @@ int main(void){
     }
     BytebeatStop();
     Bytebeat(sound4);
-    for(int j=0; j<450; j++){
+    for(int j=0; j<500; j++){
         for (int i=0; i<count; i++){
             pixels[i] = ~(pixels[i] ^ 0x00FFFFFF)+(pixels[i] << 4);
         }
